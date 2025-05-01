@@ -20,8 +20,7 @@ function Header({ darkMode, toggleTheme }) {
 
   const navLinks = [
     { href: '/', text: 'Home' },
-    { href: '/analyze', text: 'Analyze Resume' },
-    { href: '/about', text: 'About' }
+    { href: '/analyze', text: 'Analyze Resume' }
   ];
 
   return (
@@ -29,29 +28,29 @@ function Header({ darkMode, toggleTheme }) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-              RezumeAi
+          <div className="flex items-center">
+            <h1 className="text-xl font-bold text-orange-500 cursor-pointer">
+              Rez.Ai
             </h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:block">
-            <ul className="flex space-x-8">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
-                  >
-                    {link.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <div className="flex items-center space-x-6">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:block">
+              <ul className="flex space-x-6">
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      className="text-gray-600 hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-500 transition-colors duration-200 font-medium"
+                    >
+                      {link.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          <div className="flex items-center space-x-4">
             {/* Theme Toggle Button */}
             <button
               onClick={toggleTheme}
@@ -95,7 +94,7 @@ function Header({ darkMode, toggleTheme }) {
                 <a
                   href={link.href}
                   onClick={closeMenu}
-                  className="block text-lg font-medium text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+                  className="block text-lg font-medium text-gray-600 hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-500 transition-colors duration-200"
                 >
                   {link.text}
                 </a>

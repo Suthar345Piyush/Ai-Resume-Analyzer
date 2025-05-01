@@ -7,7 +7,7 @@ function Footer() {
 
   const socialLinks = [
     {
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/Suthar345Piyush/Ai-Resume-Analyzer',
       icon: <FaGithub className="w-5 h-5 text-black"/>,
       label: 'GitHub'
     },

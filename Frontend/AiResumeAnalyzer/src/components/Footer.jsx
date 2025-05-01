@@ -8,17 +8,17 @@ function Footer() {
   const socialLinks = [
     {
       href: 'https://github.com/yourusername',
-      icon: <FaGithub className="w-5 h-5" />,
+      icon: <FaGithub className="w-5 h-5 text-black"/>,
       label: 'GitHub'
     },
     {
       href: 'https://x.com/PiyushS35',
-      icon: <FaXTwitter className="w-5 h-5"/>,
+      icon: <FaXTwitter className="w-5 h-5 text-black"/>,
       label: 'Twitter'
     },
     {
       href: 'https://www.linkedin.com/in/piyush-suthar-641a0826a/',
-      icon: <FaLinkedin className="w-5 h-5" />,
+      icon: <FaLinkedin className="w-5 h-5 text-blue-600" />,
       label: 'LinkedIn'
     }
   ];
@@ -40,7 +40,7 @@ function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 hover:scale-110 transform"
+                className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-blue-600 transition-colors duration-200 hover:scale-110 transform"
                 aria-label={social.label}
               >
                 {social.icon}
